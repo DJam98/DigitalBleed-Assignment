@@ -24,7 +24,7 @@ function draw() {
   textAlign(CENTER);
   text('intro.', xMid, yMid);
   text('middle.', xMid, yMid*3+44)
-  text('end.', xMid, yMid*5+55)
+  text('conclusion.', xMid, yMid*5+55)
   
   
   circle(xMid + 48, circle1y, circleVisable);
