@@ -11,6 +11,10 @@ let circleVisable = 10
 
 let canvasHeight = innerHeight * 3
 
+function preload() {
+  myFont = loadFont('font/introFont.ttf');
+}
+
 
 function setup() {
   createCanvas(innerWidth, innerHeight * 3 - innerHeight/3);
@@ -19,15 +23,10 @@ function setup() {
 function draw() {
   background(0);
   
-  fill('white');
-  textSize(50);
-  textAlign(CENTER);
-  text('intro.', xMid, yMid);
-  text('middle.', xMid, yMid*3+44)
-  text('conclusion.', xMid, yMid*5+55)
+
   
   
-  circle(xMid + 48, circle1y, circleVisable);
+  circle(xMid + 53, circle1y, circleVisable);
 
   circle1y = circle1y + velocity
   
@@ -37,7 +36,7 @@ function draw() {
     velocity = 1
   }
     
-  circle(xMid - 76, circle2y + 40, circleVisable)
+  circle(xMid - 72, circle2y + 40, circleVisable)
   circle2y = circle2y + velocity
   
     if (circle2y > yMid * 5){
@@ -60,6 +59,16 @@ function draw() {
     // fill('black')
     // rect(0, yMid+5, innerWidth, innerHeight)
     // rect(0, innerHeight+yMid+49, innerWidth, innerHeight-38)
+
+    
   }
+
+  fill('white');
+  textSize(50);
+  textAlign(CENTER);
+  textFont(myFont)
+  text('intro.', xMid, yMid);
+  text('middle.', xMid, yMid*3+44)
+  text('conclusion.', xMid, yMid*5+55)
   
 }
