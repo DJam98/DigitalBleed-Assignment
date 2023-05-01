@@ -3,7 +3,7 @@
 let xMid = innerWidth / 2
 let yMid = innerHeight / 2
 let circle1y = yMid
-let circle2y = yMid*5 + 50
+let circle2y = yMid*3
 
 let velocity = 1
 let repeat = 0
@@ -23,8 +23,8 @@ function draw() {
   textSize(50);
   textAlign(CENTER);
   text('intro.', xMid, yMid);
-  text('Middle', xMid, yMid*3+44)
-  text('Conclusion', xMid, yMid*5+55)
+  text('middle.', xMid, yMid*3+44)
+  text('end.', xMid, yMid*5+55)
   
   
   circle(xMid + 48, circle1y, circleVisable);
@@ -36,10 +36,8 @@ function draw() {
     repeat = repeat + 1
     velocity = 1
   }
-  
-  text('Middle', xMid, yMid*3+44)
-  
-  circle(xMid - 68, circle2y + 40, circleVisable)
+    
+  circle(xMid - 76, circle2y + 40, circleVisable)
   circle2y = circle2y + velocity
   
     if (circle2y > yMid * 5){
