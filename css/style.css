@@ -26,6 +26,15 @@ canvas {
     display: block;
 }
 
+.break {
+    height: 600px;
+    width: 100%;
+}
+
+.start{
+    margin-top: 0.4vh;
+}
+
 h1{
     text-align: center;
     font-weight: 800;
@@ -54,56 +63,69 @@ h1{
     min-width: 0;
     width: 100vw;
     left: 50px;
+    margin-top: 200px;
+    background-image: linear-gradient(black, white, white);
 }
 
 .vl1 {
-    border-left: 6px solid white;
+    border-left: 6px solid;
     height: 1200px;
     left: 50%;
     margin-left: -3px;
     flex-grow: 1;
+    background-color: transparent;
+    border-image: linear-gradient(to bottom, white, white, black) 1 100%;;
 }
 
 .vl2 {
-    border-left: 6px solid white;
+    border-left: 6px solid;
       height: 1000px;
       left: 50%;
       margin-left: -3px;
       flex-grow: 2;
       margin-top: 100px;
+      background-color: transparent;
+      border-image: linear-gradient(to bottom, white, white, black) 1 100%;;
+
 }
 
 .vl3 {
-    border-left: 6px solid white;
+    border-left: 6px solid;
       height: 900px;
       left: 50%;
       margin-left: -3px;
       flex-grow: 3;
       margin-top: 150px;
+      background-color: transparent;
+      border-image: linear-gradient(to bottom, white, white, black) 1 100%;;
+
 }
 
 .vl4 {
-    border-left: 6px solid white;
+    border-left: 6px solid;
       height: 800px;
       left: 50%;
       margin-left: -3px;
       flex-grow: 4;
       margin-top: 200px;
-      /* margin-right: 50px;
-      margin-left: 50px; */
+      background-color: transparent;
+      border-image: linear-gradient(to bottom, white, white, black) 1 100%;;
 }
 
 .vl5 {
-    border-left: 6px solid white;
+    border-left: 6px solid;
       height: 700px;
       left: 50%;
       margin-left: -3px;
       flex-grow: 5;
       margin-top: 250px;
       position: absolute;
+      background-color: transparent;
+      border-image: linear-gradient(to bottom, white, white, black) 1 100%;;
+
 }
 
 .rightLine {
     border-left: none;
-    border-right: 6px solid white;
+    border-right: 6px solid;
 }
