@@ -1,5 +1,3 @@
-
-
 let xMid = innerWidth / 2
 let yMid = innerHeight / 2
 let circle1y = yMid
