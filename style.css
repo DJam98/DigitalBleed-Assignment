@@ -5,7 +5,7 @@
 }
 
 body{
-    /* background-color: blue; */
+    background-color: white;
 }
 
 section {
@@ -35,6 +35,9 @@ section {
     position: -webkit-sticky; /* Safari */  
     top: 45vh;
     background-color: blue;
+    left: 50%;
+    display: inline-block;
+    transform: translateX(-50%)
 }
 
 #middle {
@@ -43,7 +46,6 @@ section {
     height: 1000vh;
     width: 100vw;
     padding: 45vh;
-    position: relative;
 }
 
 .middleSticky {
@@ -55,6 +57,9 @@ section {
     color: white;
     height: fit-content;
     width: 100%;
+    left: 50%;
+    display: inline-block;
+    transform: translateX(-50%)
 }
 
 
@@ -62,8 +67,8 @@ section {
     height: 700vh;
     width: 100vh;
     background-image: linear-gradient(black, black, black, black, white);
-
 }
+
 /* .middleSticky{
     height: fit-content;
     width: fit-content;
@@ -108,4 +113,7 @@ section {
     position: -webkit-sticky; /* Safari */  
     top: 45vh;
     background-color: blue;
+    left: 50%;
+    display: inline-block;
+    transform: translateX(-50%)
 }
