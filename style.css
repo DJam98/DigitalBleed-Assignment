@@ -43,7 +43,7 @@ section {
 #middle {
     background-image: linear-gradient(black, black, black, black, white);
     color: white;
-    height: 1000vh;
+    height: 700vh;
     width: 100vw;
     padding: 45vh;
 }
@@ -56,10 +56,10 @@ section {
     background-color: blue;
     color: white;
     height: fit-content;
-    width: 100%;
     left: 50%;
-    display: inline-block;
-    transform: translateX(-50%)
+    display: table;
+    text-align: center;
+    transform: translateX(-50%);
 }
 
 
@@ -69,43 +69,16 @@ section {
     background-image: linear-gradient(black, black, black, black, white);
 }
 
-/* .middleSticky{
-    height: fit-content;
-    width: fit-content;
-    display: sticky;
-    position: -webkit-sticky; Safari 
-    margin-top: 100vh;
-    top: 300vh;
+.endContainer{
+    top: 700vh;
+    width: 100vh;
 }
-
-.middleAlign {
-    width: 100vw;
-    text-align: center;
-    transform: translate(0, -100vh);
-}
-
-#middle {
-    color: white;
-    position: relative;
-    background-color: black;
-}
-
-#expand{
-    background-color: black;
-    width: 100vw;
-    min-width: 0;
-    min-height: 100vh;
-    position: absolute;
-    will-change: width;
-} */
 
 #end {
     background-color: white;
-    color: black;
     height: 100vh;
     width: 100vw;
     padding: 45vh;
-    bottom: 0;
 }
 
 .endSticky {
@@ -113,7 +86,9 @@ section {
     position: -webkit-sticky; /* Safari */  
     top: 45vh;
     background-color: blue;
+    color: black;
+    height: fit-content;
     left: 50%;
     display: inline-block;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
 }
