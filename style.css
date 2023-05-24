@@ -6,11 +6,18 @@
 
 body{
     background-color: white;
+    overflow-x: hidden;
 }
 
 section {
     text-align: center;
     /* padding-top: 45vh; */
+}
+
+.animations{
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    /* top: 0; */
 }
 
 .introContainer{
@@ -58,7 +65,7 @@ section {
     height: fit-content;
     left: 50%;
     display: table;
-    text-align: center;
+    text-align: center;;
     transform: translateX(-50%);
 }
 
@@ -67,6 +74,23 @@ section {
     height: 700vh;
     width: 100vh;
     background-image: linear-gradient(black, black, black, black, white);
+}
+
+.cinema{
+    background-color: transparent;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: 50vh;
+    transform: translateY(-50vh);
+    transform: translateX(12.5vw);
+}
+
+.textMiddle {
+    transform: translateY(50vh);
 }
 
 .endContainer{
