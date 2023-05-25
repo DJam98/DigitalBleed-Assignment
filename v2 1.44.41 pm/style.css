@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 50px;
+}
+
+body{
+    background-color: white;
+    overflow-x:hidden;
+    font-family: grenadine-mvb, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+section {
+    text-align: center;
+    /* padding-top: 45vh; */
+}
+
+.animations{
+    position: fixed;
+    background-color: transparent;
+    /* transform: translateX(-50%); */
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+}
+
+#cinemaScreen{
+    background-color: transparent;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 20px;
+    border-color: white;
+    width: 80vw;
+    margin-left: 10VW;
+    margin-top: 25vh;
+    height: 50vh;
+    transform: scaleX(0%);
+    transition: 1s;
+}
+
+.introContainer{
+    height: 700vh;
+    width: 100vh;
+    background-image: linear-gradient(white, white, white, black, black);
+
+}
+
+#intro {
+    background-image: linear-gradient(white, white, white, black, black);
+    color: black;
+    height: 700vh;
+    width: 100vw;
+    padding: 45vh;
+
+}
+
+.introSticky {
+
+    position: sticky;
+    position: -webkit-sticky; /* Safari */  
+    top: 45vh;
+    left: 50%;
+    display: inline-block;
+    /* transform: translateX(-50%); */
+    text-align: center;
+}
+
+#middle {
+    background-image: linear-gradient(black, black, black, white, white);
+    color: white;
+    height: 700vh;
+    width: 100vw;
+    padding: 45vh;
+}
+
+.middleSticky {
+
+    position: sticky;
+    position: -webkit-sticky; /* Safari */  
+    top: 45vh;
+    color: white;
+    height: fit-content;
+    left: 50%;
+    display: inline-block;
+    text-align: center;
+    /* transform: translateX(-50%); */
+}
+
+
+.middleContainer{
+    height: 700vh;
+    width: 100vh;
+    background-image: linear-gradient(black, black, black, black, white);
+}
+
+.textMiddle {
+    transform: translateY(50vh);
+}
+
+.endContainer{
+    top: 700vh;
+    width: 100vh;
+}
+
+#end {
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    padding: 45vh;
+}
+
+.endSticky {
+    position: sticky;
+    position: -webkit-sticky; /* Safari */  
+    top: 45vh;
+    color: black;
+    height: fit-content;
+    left: 50%;
+    display: inline-block;
+    /* transform: translateX(-50%); */
+}

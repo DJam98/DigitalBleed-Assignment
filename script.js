@@ -1,28 +1,50 @@
-// Scroll reveal
-/*
-function changeWidth() {
-    var scroll = (window.pageYOffset / 5);
-    var width = scroll;
-    // var width = Math.min(100 - scroll);
+window.onscroll = function() {scrollFunction()};
 
-    document.getElementById('expand').style.width = width + '%';
+let shhCount = 0;
+
+let audio1 = document.getElementById("audio1");
+audio1.volume = 1
+
+
+let audio2 = document.getElementById("audio2");
+audio2.volume = 0
+
+let shh = document.getElementById("shh");
+
+function scrollFunction() {
+
+
+
+  if (document.body.scrollTop > 5.5*innerHeight || document.documentElement.scrollTop > 5.5*innerHeight) {
+    document.getElementById("cinemaScreen").style.transform = "scaleX(100%)";
+    audio1.volume = 0;
+    audio2.volume = 1;
+    
+  } else {
+    document.getElementById("cinemaScreen").style.transform = "scaleX(0%)";
   }
 
-  window.addEventListener('scroll', function(){
-    requestAnimationFrame(changeWidth);
-  }) */
+  if (document.body.scrollTop > 12*innerHeight || document.documentElement.scrollTop > 12*innerHeight) {
+    audio1.volume = 1;
+    audio2.volume = 0;
 
-  function setup(){
-    createCanvas(innerWidth, innerHeight)
-  }
+}
 
-  function draw (){
-    background ('red')
-    strokeWeight (5)
-    stroke ('black')
-    fill ('transparent')
-    rect (innerWidth/10, innerHeight/3, innerWidth/5*4, innerHeight/3)
+//  if (document.body.scrollTop > 5*innerHeight || document.documentElement.scrollTop > 5*innerHeight) {
 
+//    if (document.body.scrollTop > 6*innerHeight || document.documentElement.scrollTop > 6*innerHeight) {
+//        shh.currentTime = 0;
+//        shh.pause();
+//    }else{
 
-  }
-
+//    if (shhCount = 0){
+//      shh.play();
+//      shhCount = shhCount + 1
+//    }
+//  }
+//  } 
+// else{
+//   shh.currentTime = 0;
+//   shh.pause();
+// }
+}

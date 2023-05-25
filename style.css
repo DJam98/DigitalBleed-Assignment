@@ -6,7 +6,10 @@
 
 body{
     background-color: white;
-    overflow-x: hidden;
+    overflow-x:hidden;
+    font-family: grenadine-mvb, sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 section {
@@ -15,9 +18,27 @@ section {
 }
 
 .animations{
-    position: sticky;
-    position: -webkit-sticky; /* Safari */
-    /* top: 0; */
+    position: fixed;
+    background-color: transparent;
+    /* transform: translateX(-50%); */
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+}
+
+#cinemaScreen{
+    background-color: transparent;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 20px;
+    border-color: white;
+    width: 80vw;
+    margin-left: 10VW;
+    margin-top: 25vh;
+    height: 50vh;
+    transform: scaleX(0%);
+    transition: 1s;
 }
 
 .introContainer{
@@ -41,14 +62,14 @@ section {
     position: sticky;
     position: -webkit-sticky; /* Safari */  
     top: 45vh;
-    background-color: blue;
     left: 50%;
     display: inline-block;
-    transform: translateX(-50%)
+    /* transform: translateX(-50%); */
+    text-align: center;
 }
 
 #middle {
-    background-image: linear-gradient(black, black, black, black, white);
+    background-image: linear-gradient(black, black, black, white, white);
     color: white;
     height: 700vh;
     width: 100vw;
@@ -60,13 +81,12 @@ section {
     position: sticky;
     position: -webkit-sticky; /* Safari */  
     top: 45vh;
-    background-color: blue;
     color: white;
     height: fit-content;
     left: 50%;
-    display: table;
-    text-align: center;;
-    transform: translateX(-50%);
+    display: inline-block;
+    text-align: center;
+    /* transform: translateX(-50%); */
 }
 
 
@@ -74,19 +94,6 @@ section {
     height: 700vh;
     width: 100vh;
     background-image: linear-gradient(black, black, black, black, white);
-}
-
-.cinema{
-    background-color: transparent;
-    border-style: solid;
-    border-width: 2px;
-    border-color: white;
-    width: 80vw;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    height: 50vh;
-    transform: translateY(-50vh);
-    transform: translateX(12.5vw);
 }
 
 .textMiddle {
@@ -109,10 +116,9 @@ section {
     position: sticky;
     position: -webkit-sticky; /* Safari */  
     top: 45vh;
-    background-color: blue;
     color: black;
     height: fit-content;
     left: 50%;
     display: inline-block;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
 }

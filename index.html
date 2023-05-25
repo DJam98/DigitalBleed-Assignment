@@ -7,31 +7,42 @@
     <title>Digital Bleed</title>
 
     <link rel="stylesheet" href="style.css">
-    <!-- <script src="script.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script> -->
-
+    <link rel="stylesheet" href="https://use.typekit.net/rnh6jsd.css">
 
 </head>
 
 <body>
-    <!-- <div class="animations"><script src="script.js"></script></div>
-    <canvas id="screen"></canvas> -->
+
+    <iframe src="audio/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+
+    <audio id="audio1" autoplay loop>
+        <source src="/audio/audio1.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="audio2" autoplay loop>
+        <source src="/audio/audio2.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="shh">
+        <source src="/audio/thx.mp3" type="audio/mpeg">
+    </audio>
+    
     <main>
+
+    <div class="animations">
+        <div id="cinemaScreen"></div>
+    </div>
 
     <div class="introContainer">
         <span class="introSticky">intro.</span>
         <section id="intro"></section>
     </div>
 
-    
 
     <div class="middleContainer">
         <div class="middleSticky">                
-            <!-- <div class="cinema"> -->
-                <span class="textMiddle">middle.</span>
-            <!-- </div> -->
+            <span class="textMiddle">middle.</span>
         </div>
 
         <section id="middle"></section>
@@ -39,16 +50,12 @@
 
         <div class="endContainer">
             <div class="endSticky">
-
                     end.</div>
             <section id="end"></section>
     </div>
 
-
-
-
-       
     </div>
-
 </main>
+<script src="script.js"></script>
 </body>
+</html>
